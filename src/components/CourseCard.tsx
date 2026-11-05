@@ -64,7 +64,7 @@ const CourseCard = ({
                         href={href}
                         className="inline-block rounded px-5 py-2.5 text-base font-medium text-white bg-blue-600 transition hover:bg-blue-700"
                       >
-                        {buttonText || "View The Course"}
+                        {buttonText || "View The Courses"}
                       </Link>
                     )
                   )}
