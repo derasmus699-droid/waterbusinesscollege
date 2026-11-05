@@ -401,32 +401,7 @@ const faqs = [
     answer: (
       <div className="px-6 py-4 bg-gray-50 text-gray-700 text-sm space-y-2">
         <p>
-          Water Business College (WBC) currently operates from an administrative office shared with an engineering company:
-          <br />
-          <strong>Office H4, The Willows Office Park, Die Wilgers, Pretoria</strong>.
-        </p>
-        <p>
-          The Willows Park Office is mainly used for online classes. WBC employs a blended learning approach, combining online knowledge modules with in-person practical modules.
-        </p>
-        <p>
-          <strong>Knowledge Modules (KM):</strong> Delivered online through two 2-hour sessions per week, typically on Tuesday and Thursday afternoons from 17h00 to 19h00.
-        </p>
-        <p>
-          <strong>Practical Modules (PM):</strong> Conducted in-person at WBC’s practical site. Learners are required to attend two 2-week practical sessions (total of 4 weeks) during the academic year.
-        </p>
-        <p>
-          <strong>Practical Site / Laboratory:</strong> WBC has developed a prototype water reticulation system for hands-on training, simulating municipal and industrial water systems.
-          <br />
-          Watch a video of the practical site here:{" "}
-          <a href="https://www.youtube.com/watch?v=RndYrlr6L7Q" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
-            https://www.youtube.com/watch?v=RndYrlr6L7Q
-          </a>
-        </p>
-        <p>
-          <strong>Note:</strong> The practical site has been disassembled for relocation and will be reassembled in time for upcoming sessions.
-        </p>
-        <p>
-          <strong>Future Decentralised Operations:</strong> WBC is working on establishing infrastructure in other provinces, collaborating with local engineering firms to support regional delivery of practical modules.
+          Water Business College (WBC) is an online e-Learing platform.
         </p>
       </div>
     ),
@@ -449,9 +424,6 @@ const faqs = [
           <li>Email: <strong>contactus@waterbusinesscollege.co.za</strong></li>
           <li>Follow us on Facebook.</li>
         </ul>
-        <p>
-          The Willows Park Office (Office H4, The Willows Office Park, Die Wilgers, Pretoria) is primarily used for online classes.
-        </p>
         <p>
           WBC will expand its infrastructure based on demand for academic programmes across various regions.
         </p>

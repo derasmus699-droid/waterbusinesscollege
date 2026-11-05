@@ -8,8 +8,6 @@ export default function ContactUsPage() {
           </h2>
           <div className="text-gray-700 space-y-4 text-xl leading-relaxed">
             <p>
-              Office H4, The Willows Office Park,<br />
-              559 Farm Road, Die Wilgers, Pretoria, 0181
             </p>
             <p>Tel: +27 (0)81 727 9793</p>
             <p>

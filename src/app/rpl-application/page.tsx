@@ -149,13 +149,12 @@ export default function RPLApplicationPage() {
         {/* ID Number */}
         <div>
           <label htmlFor="idNumber" className="block mb-2 font-semibold">
-            ID Number
+            ID Number <span className="text-sm font-normal text-gray-500">(Optional)</span>
           </label>
           <input
             id="idNumber"
             name="idNumber"
             type="tel"
-            required
             value={formData.idNumber}
             onChange={handleChange}
             className="w-full border border-gray-300 rounded p-2"

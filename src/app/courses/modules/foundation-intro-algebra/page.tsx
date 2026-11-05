@@ -20,7 +20,7 @@ export default function FoundationIntroAlgebraPage() {
           type="button"
           className="bg-[#2e528e] hover:bg-[#2e528e] text-white font-semibold px-6 py-3 rounded-lg shadow w-[400px]"
           onClick={() => {
-            window.location.href = "/courses";
+            window.open('https://www.portal.waterbusinesscollege.co.za/?add-to-cart=10495&redirect_to=https://www.portal.waterbusinesscollege.co.za/cart-2/', '_blank');
           }}
         >
           Purchase course

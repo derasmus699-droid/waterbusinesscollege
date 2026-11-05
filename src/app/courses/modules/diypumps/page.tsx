@@ -16,7 +16,7 @@ export default function DiyCourses() {
       <div className="flex justify-center">
         <button
           className="bg-[#2e528e] hover:bg-[#2e528e] text-white font-semibold px-6 py-3 rounded-lg shadow w-[400px]"
-          onClick={() => (window.location.href = "/courses")} // or your actual internal registration page
+          onClick={() => window.open('https://www.portal.waterbusinesscollege.co.za/?add-to-cart=7140&redirect_to=https://www.portal.waterbusinesscollege.co.za/cart-2/', '_blank')} // or your actual internal registration page
         >
           Purchase course
         </button>

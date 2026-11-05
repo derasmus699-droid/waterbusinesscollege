@@ -83,7 +83,9 @@ export default function StudentDiscountApplicationPage() {
                 field === "idNumber" ? "ID Number" :
                   field === "contactNumber" ? "Contact Number" :
                     "Email Address"}
-              <span className="text-red-500 ml-1">*</span>
+              {field !== "idNumber" && field !== "contactNumber" && (
+                <span className="text-red-500 ml-1">*</span>
+              )}
             </label>
             <input
               id={field}
@@ -92,7 +94,7 @@ export default function StudentDiscountApplicationPage() {
                 field === "email" ? "email" :
                   field.includes("Number") ? "tel" : "text"
               }
-              required
+              required={field !== "idNumber" && field !== "contactNumber"}
               value={formData[field as keyof typeof formData] as string}
               onChange={handleChange}
               className="w-full border border-gray-300 rounded p-2"

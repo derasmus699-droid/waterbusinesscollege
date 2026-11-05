@@ -15,9 +15,7 @@ export default function Module6InterestForm() {
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {
       newErrors.email = 'Email format is invalid';
     }
-    if (!form.phone.trim()) {
-      newErrors.phone = 'Phone is required';
-    } else if (!/^\+?\d{7,15}$/.test(form.phone)) {
+    if (form.phone.trim() && !/^\+?\d{7,15}$/.test(form.phone)) {
       newErrors.phone = 'Phone format is invalid';
     }
     return newErrors;
@@ -97,7 +95,7 @@ export default function Module6InterestForm() {
 
           {/* Phone */}
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone</label>
+            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone <span className="text-xs text-gray-500 font-normal">(Optional)</span></label>
             <input
               type="tel"
               id="phone"

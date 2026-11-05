@@ -46,3 +46,6 @@ next-env.d.ts
 # Admin dashboard local data & uploads
 admin-data.json
 /public/uploads
+
+# Zaemit AI tool config (auto-generated)
+.mcp.json

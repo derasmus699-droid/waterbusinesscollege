@@ -233,13 +233,12 @@ export default function QualificationApplicationPage() {
         {/* Motivation / Statement */}
         <div>
           <label htmlFor="motivation" className="block mb-2 font-semibold">
-            Motivation / Statement
+            Motivation / Statement <span className="text-sm font-normal text-gray-500">(Optional)</span>
           </label>
           <textarea
             id="motivation"
             name="motivation"
             rows={4}
-            required
             value={formData.motivation}
             onChange={handleChange}
             className="w-full border border-gray-300 rounded p-2"

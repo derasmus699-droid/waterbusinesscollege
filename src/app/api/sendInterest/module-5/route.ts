@@ -6,7 +6,7 @@ import { sendMail } from '@/utils/mailer'; // You’ll need to define this if no
 export async function POST(req: NextRequest) {
   const { name, email, phone } = await req.json();
 
-  if (!name || !email || !phone) {
+  if (!name || !email) {
     return NextResponse.json({ error: 'Missing fields' }, { status: 400 });
   }
 
@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
         <h2>Module 5 Interest Submitted</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Phone:</strong> ${phone || "N/A"}</p>
       `,
     });
 

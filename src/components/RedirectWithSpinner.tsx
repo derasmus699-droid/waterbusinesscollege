@@ -20,15 +20,8 @@ export default function RedirectWithSpinner({
       }
     }, 1500);
 
-    const backHomeTimeout = setTimeout(() => {
-      if (newTab) {
-        window.location.href = "/";
-      }
-    }, 4000); // 4s total delay before returning to homepage
-
     return () => {
       clearTimeout(openTabTimeout);
-      clearTimeout(backHomeTimeout);
     };
   }, [url, newTab]);
 
@@ -42,10 +35,13 @@ export default function RedirectWithSpinner({
           height={100}
           className="animate-neon-pulse"
         />
-        <p className="text-white text-sm animate-fade-in">Redirecting you...</p>
+        <p className="text-gray-800 text-sm font-medium animate-fade-in">Redirecting you...</p>
         {newTab && (
-          <p className="text-white text-xs opacity-70 animate-fade-in delay-500">
-            You&apos;ll return to the homepage shortly.
+          <p className="text-gray-600 text-xs opacity-80 animate-fade-in delay-500 text-center">
+            If the checkout page didn&apos;t open automatically in a new tab,{' '}
+            <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-semibold">
+              click here
+            </a>.
           </p>
         )}
       </div>

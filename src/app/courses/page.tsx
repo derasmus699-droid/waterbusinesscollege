@@ -44,7 +44,14 @@ export default function CoursesPage() {
                         </div>
                       )}
 
-                      {course.requiresStudentDiscountApplication ? (
+                      {course.underReview ? (
+                        <span
+                          className="inline-block w-full text-center px-8 py-2 bg-gray-100 border border-gray-400 text-gray-500 text-sm font-semibold rounded cursor-not-allowed select-none"
+                          role="status"
+                        >
+                          Under Review
+                        </span>
+                      ) : course.requiresStudentDiscountApplication ? (
                         <a
                           href="/student-discount-application"
                           className="inline-block text-center px-8 py-2 bg-white border border-blue-600 text-blue-600 text-sm rounded hover:bg-blue-700 hover:text-white transition"
@@ -70,6 +77,8 @@ export default function CoursesPage() {
                       ) : (
                         <a
                           href={course.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="inline-block text-center px-8 py-2 bg-white border border-blue-600 text-blue-600 text-sm rounded hover:bg-blue-700 hover:text-white transition"
                         >
                           PURCHASE
